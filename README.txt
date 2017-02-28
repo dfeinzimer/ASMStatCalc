@@ -9,6 +9,7 @@ computesum.asm
 display.c  
 getdata.c  
 main.cpp
+sort.c
 -----  -----  -----  -----  -----
 Bugs known:
 N/A
