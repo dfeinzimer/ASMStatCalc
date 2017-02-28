@@ -1,1 +1,3 @@
-# 254.p3
+# 254.p3  
+display.c  
+getdata.c  
