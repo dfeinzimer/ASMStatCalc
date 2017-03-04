@@ -6,7 +6,7 @@
 ;Course information
 ;  Course number: CPSC254
 ;  Assignment number: 3
-;  Due date: 2017-Jul-01
+;  Due date: 2017-Mar-23
 ;Project information
 ;  Project title: Data Analysis
 ;  Purpose: [Fill in a sentence here]
