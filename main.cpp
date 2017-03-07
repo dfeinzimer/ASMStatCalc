@@ -1,5 +1,7 @@
 #main.cpp
 
+extern 'C' vector<double> getdata();
+
 #include <iostream>
 #include <string>
 #include <vector>
