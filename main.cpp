@@ -1,6 +1,4 @@
-#main.cpp
-
-extern 'C' vector<double> getdata();
+// #main.cpp
 
 #include <iostream>
 #include <string>
@@ -9,6 +7,8 @@ extern 'C' vector<double> getdata();
 #include "getdata.c"
 
 using namespace std;
+
+extern 'C' vector<double> getdata();
 
 const string AUTHOR = "David Feinzimer";
 

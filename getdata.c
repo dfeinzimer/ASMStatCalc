@@ -1,4 +1,4 @@
-#getdata.c
+// #getdata.c
 
 using namespace std;
 
@@ -6,7 +6,7 @@ using namespace std;
 #include <stdio.h> 
 #include <vector>
 
-vector<int> getdata() {
+vector<double> getdata() {
 	vector<double> data;
 	printf("Please enter floating point data.\n");
 	printf("After the last number has been entered press Cntl+D\n");
