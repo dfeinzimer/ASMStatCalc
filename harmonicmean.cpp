@@ -1,1 +1,1 @@
-#harmonicmean.cpp
+//	harmonicmean.cpp

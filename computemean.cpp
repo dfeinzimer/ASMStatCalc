@@ -1,1 +1,1 @@
-#computemean.cpp
+//	computemean.cpp
