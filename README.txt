@@ -1,7 +1,7 @@
 Info:
 Author - David Feinzimer
 Contact - dfeinzimer@csu.fullerton.edu
-Last Update - 03_07_17
+Last Update - 03_08_17
 First Available - 02_28_17
 -----  -----  -----  -----  -----
 File dependencies:
@@ -15,4 +15,4 @@ sort.c
 sum-array-64.asm
 -----  -----  -----  -----  -----
 Bugs known:
-N/A
+-	getdata.c line 14	Break input after CONTROL+D
