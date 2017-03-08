@@ -3,10 +3,14 @@
 #include <float.h>
 #include <stdio.h> 
 
-double getdata() {
-	double data = 0.0;
+void getdata() {
 	printf("Please enter floating point data.\n");
 	printf("After the last number has been entered press Cntl+D\n");
-	scanf("%\lt");
-	return data;
+	double *data;
+	double pos;
+	data = (double *) malloc(15 * sizeof(double));
+	for (int i = 0; i < 15; i++) {
+		scanf("%lf", &pos);
+		data[i] = pos;
+	}
 }

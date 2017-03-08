@@ -8,15 +8,14 @@
 
 using namespace std;
 
-#define extern 'C' double * getdata();
+#define extern 'C' void getdata();
 
 const string AUTHOR = "David Feinzimer";
-double data[10];
+double data[15];
 
 int main() {
-	double * data;
 	cout << "Welcome to Data Analysis by " << AUTHOR << endl;
 	cout << "This program will compute certain statistical values." << endl << endl;
-	data = getdata();
+	getdata();
 	return 0;
 }
