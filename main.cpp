@@ -11,6 +11,7 @@ using namespace std;
 #define extern 'C' double * getdata();
 
 const string AUTHOR = "David Feinzimer";
+double data[10];
 
 int main() {
 	double * data;
