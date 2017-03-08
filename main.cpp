@@ -8,12 +8,12 @@
 
 using namespace std;
 
-#define extern 'C' double getdata();
+#define extern 'C' double * getdata();
 
 const string AUTHOR = "David Feinzimer";
 
 int main() {
-	double data;
+	double * data;
 	cout << "Welcome to Data Analysis by " << AUTHOR << endl;
 	cout << "This program will compute certain statistical values." << endl << endl;
 	data = getdata();
