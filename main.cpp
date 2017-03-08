@@ -2,20 +2,27 @@
 
 #include <iostream>
 #include <string>
+using namespace std;
+
 #include <vector>
 
 #include "getdata.c"
-
-using namespace std;
+#include "display.c"
 
 #define extern 'C' double * getdata();
+#define extern 'C' void display();
 
 const string AUTHOR = "David Feinzimer";
 double *dat;
 
 int main() {
+	
 	cout << "Welcome to Data Analysis by " << AUTHOR << endl;
 	cout << "This program will compute certain statistical values." << endl << endl;
+	
 	dat = getdata();
+
+	display();
+
 	return 0;
 }

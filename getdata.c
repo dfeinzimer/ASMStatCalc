@@ -1,6 +1,5 @@
 //	getdata.c
 
-#include <float.h>
 #include <stdio.h> 
 
 double * getdata() {
