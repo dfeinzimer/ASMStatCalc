@@ -15,4 +15,4 @@ sort.c
 sum-array-64.asm
 -----  -----  -----  -----  -----
 Bugs known:
--	display.c	Need to clear input buffer
+N/A
