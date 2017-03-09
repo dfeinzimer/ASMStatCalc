@@ -8,12 +8,11 @@ double * getdata() {
 	double *data;
 	data = (double *) malloc(15 * sizeof(double));
 	double numbers[15];
+	fseek(stdin, 0, SEEK_END);
 	for (int i = 0; i < 15; i++) {
 		scanf("%lf", &numbers[i]);
-		if (0) {	//	TODO: Break on CONTROL+D
-			break;
-		}
 	}
+	printf("\n");
 	data = numbers;
 	return data;
 }

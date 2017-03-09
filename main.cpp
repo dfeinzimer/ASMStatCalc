@@ -20,9 +20,13 @@ int main() {
 	cout << "Welcome to Data Analysis by " << AUTHOR << endl;
 	cout << "This program will compute certain statistical values." << endl << endl;
 	
-	dat = getdata();
+	while (true) {
+		
+		dat = getdata();
 
-	display();
+		display();
+
+	}
 
 	return 0;
 }

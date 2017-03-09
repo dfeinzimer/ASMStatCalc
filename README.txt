@@ -15,4 +15,4 @@ sort.c
 sum-array-64.asm
 -----  -----  -----  -----  -----
 Bugs known:
--	getdata.c line 14	Break input after CONTROL+D
+-	display.c	Need to clear input buffer
