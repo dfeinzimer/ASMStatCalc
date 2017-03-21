@@ -2,17 +2,23 @@
 
 #include <stdio.h> 
 
-double * getdata() {
+int getdata() {
+	int nums_used = 0;
+	int code = 0;
+	
+	double numbers[15];
+
 	printf("Please enter floating point data.\n");
 	printf("After the last number has been entered press Cntl+D\n");
-	double *data;
-	data = (double *) malloc(15 * sizeof(double));
-	double numbers[15];
+
+	
 	fseek(stdin, 0, SEEK_END);
-	for (int i = 0; i < 15; i++) {
-		scanf("%lf", &numbers[i]);
+	code = scanf("%lf", &numbers[0]);
+	while (code != 0) {
+		nums_used++;
+		code = scanf("%lf",&numbers[0]);
 	}
 	printf("\n");
-	data = numbers;
-	return data;
+	
+	return nums_used;
 }
