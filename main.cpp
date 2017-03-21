@@ -30,7 +30,7 @@ int main() {
 		display(nums, nums_used);
 
 		double sum = 0;
-		double arithmetic_mean = computemean();
+		double arithmetic_mean = computemean(numbers,nums_used);
 		double median = 0;
 		double harmonic_mean = 0;
 
