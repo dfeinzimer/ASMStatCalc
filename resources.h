@@ -1,0 +1,3 @@
+//	resources.h
+
+double computemean();

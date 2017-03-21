@@ -4,8 +4,9 @@
 #include <string>
 #include <vector>
 
-#include "getdata.c"
 #include "display.c"
+#include "getdata.c"
+#include "resources.h"
 
 using namespace std;
 
@@ -29,7 +30,7 @@ int main() {
 		display(nums, nums_used);
 
 		double sum = 0;
-		double arithmetic_mean = 0;
+		double arithmetic_mean = computemean();
 		double median = 0;
 		double harmonic_mean = 0;
 
