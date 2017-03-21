@@ -28,6 +28,24 @@ int main() {
 
 		display(nums, nums_used);
 
+		double sum = 0;
+		double arithmetic_mean = 0;
+		double median = 0;
+		double harmonic_mean = 0;
+
+		cout << "The following statistics were computed: " << endl;
+		cout << "Sum:\t\t\t" << sum << endl;
+		cout << "Arithmetic mean:\t" << arithmetic_mean << endl;
+		cout << "Median:\t\t\t" << median << endl;
+		cout << "Harmonic mean:\t\t" << harmonic_mean << endl;
+		cout << "The sorted data set is:" << endl;
+		//sort();
+		cout << "The original data set is:" << endl;
+		for (int i = 0; i < nums_used; i++) {
+			cout << numbers[i] << endl;
+		}
+		cout << "Thank you for using this program. Enjoy your statistics." << endl << endl;
+
 	}
 
 	return 0;
