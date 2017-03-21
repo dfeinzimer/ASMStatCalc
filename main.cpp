@@ -10,7 +10,7 @@
 using namespace std;
 
 #define extern 'C' int getdata(double * data);
-#define extern 'C' void display();
+#define extern 'C' void display(double * data, int nums_used);
 
 const string AUTHOR = "David Feinzimer";
 double numbers[15];
@@ -26,7 +26,7 @@ int main() {
 		
 		nums_used = getdata(nums);
 
-		display();
+		display(nums, nums_used);
 
 	}
 
