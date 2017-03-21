@@ -9,11 +9,12 @@
 
 using namespace std;
 
-#define extern 'C' int getdata();
+#define extern 'C' int getdata(double * data);
 #define extern 'C' void display();
 
 const string AUTHOR = "David Feinzimer";
-double *dat;
+double numbers[15];
+double *nums = &numbers[0];
 int nums_used = 0;
 
 int main() {
@@ -23,9 +24,7 @@ int main() {
 	
 	while (true) {
 		
-		nums_used = getdata();
-
-		cout << "getdata() returns " << nums_used << endl;
+		nums_used = getdata(nums);
 
 		display();
 
