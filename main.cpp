@@ -32,7 +32,7 @@ int main() {
 		double sum = 0;
 		double arithmetic_mean = computemean(numbers,nums_used);
 		double median = computemedian(numbers,nums_used);
-		double harmonic_mean = 0;
+		double harmonic_mean = harmonicmean(numbers,nums_used);
 
 		cout << "The following statistics were computed: " << endl;
 		cout << "Sum:\t\t\t" << sum << endl;
