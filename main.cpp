@@ -31,7 +31,7 @@ int main() {
 
 		double sum = 0;
 		double arithmetic_mean = computemean(numbers,nums_used);
-		double median = 0;
+		double median = computemedian(numbers,nums_used);
 		double harmonic_mean = 0;
 
 		cout << "The following statistics were computed: " << endl;
