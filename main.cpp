@@ -7,11 +7,13 @@
 #include "display.c"
 #include "getdata.c"
 #include "resources.h"
+#include "sort.c"
 
 using namespace std;
 
 #define extern 'C' int getdata(double * data);
 #define extern 'C' void display(double * data, int nums_used);
+#define extern 'C' void sort(double * data, int nums_used);
 
 const string AUTHOR = "David Feinzimer";
 double numbers[15];
@@ -40,7 +42,7 @@ int main() {
 		cout << "Median:\t\t\t" << median << endl;
 		cout << "Harmonic mean:\t\t" << harmonic_mean << endl;
 		cout << "The sorted data set is:" << endl;
-		//sort();
+		sort(nums, nums_used);
 		cout << "The original data set is:" << endl;
 		for (int i = 0; i < nums_used; i++) {
 			cout << numbers[i] << endl;
