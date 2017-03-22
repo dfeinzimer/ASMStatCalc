@@ -20,7 +20,7 @@ gcc -m64 -c -o getdata.o getdata.c
 gcc -m64 -c -o sort.o sort.c
 
 #compile asm file
-nasm -f elf64 -l sum-array64.list -o sum-array-64.o sum-array-64.asm
+nasm -f elf64 -l sum-array-64.list -o sum-array-64.o sum-array-64.asm
 
 #list all
 ls -l
