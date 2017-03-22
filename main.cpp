@@ -11,7 +11,7 @@
 
 using namespace std;
 
-//extern "C" {double sum(double * data, int nums_used);}
+//extern double sum(double * data, int nums_used);
 #define extern 'C' int getdata(double * data);
 #define extern 'C' void display(double * data, int nums_used);
 #define extern 'C' void sort(double * data, int nums_used);
@@ -20,6 +20,7 @@ const string AUTHOR = "David Feinzimer";
 double numbers[15];
 double *nums = &numbers[0];
 int nums_used = 0;
+double sumation = 0;
 
 int main() {
 	
@@ -33,8 +34,7 @@ int main() {
 		if (nums_used > 0) {
 			display(nums, nums_used);
 
-			//double sumation = sum(nums,nums_used);
-			double sumation = 0;
+			//sumation = sum(nums,nums_used);
 			double arithmetic_mean = computemean(numbers, nums_used);
 			double median = computemedian(numbers, nums_used);
 			double harmonic_mean = harmonicmean(numbers, nums_used);

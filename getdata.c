@@ -11,7 +11,7 @@ int getdata(double * data) {
 
 	fseek(stdin, 0, SEEK_END);
 	code = scanf("%lf", &data[nums_used]);
-	while (code != 0) {
+	while (code != EOF) {
 		nums_used++;
 		code = scanf("%lf", &data[nums_used]);
 	}
