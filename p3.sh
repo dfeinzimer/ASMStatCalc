@@ -6,6 +6,7 @@ echo Script file for project 3 begins
 #remove old objects
 rm *.o
 rm *.out
+rm *.list
 
 #compile cpp files
 g++ -m64 -c -o computemean.o computemean.cpp
