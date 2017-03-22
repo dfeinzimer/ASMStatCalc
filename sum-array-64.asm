@@ -41,7 +41,7 @@
 
 ;extern scanf                                                ;External C++ function for reading from the standard input device.  Not used in this function.
 
-global sum                                                   ;This makes sum-array callable by functions outside of this file.
+global proc                                                  ;This makes sum-array callable by functions outside of this file.
 
 segment .data                                                ;Place initialized data here
 
@@ -96,6 +96,6 @@ end_loop:                                                    ;A marker for the l
 movsd      xmm0, xmm8                                        ;Copy the accumulated sum to the register designated for return values
 pop        rbp                                               ;Resort to rbp the value it had in the function that called this assembly function.
 ret                                                          ;Pop the stack into the rip register which is the register of the next instrucction.
-
+END
 ;========== End of function sum-array.asm ==================================================================================================================================
 ;========1=========2=========3=========4=========5=========6=========7=========8=========9=========0=========1=========2=========3=========4=========5=========6=========7**
