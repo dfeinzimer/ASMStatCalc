@@ -19,11 +19,14 @@ gcc -m64 -c -o display.o display.c
 gcc -m64 -c -o getdata.o getdata.c
 gcc -m64 -c -o sort.o sort.c
 
+#compile asm file
+nasm -f elf64 -l sum-array-64.list -o sum-array-64.o sum-array-64.asm
+
 #list all
 ls -l
 
 #link all files
-g++ -m64 -o project.out computemean.o computemedian.o harmonicmean.o main.o display.o getdata.o sort.o
+g++ -m64 -o project.out computemean.o computemedian.o harmonicmean.o main.o display.o getdata.o sort.o sum-array-64.o
 
 #call program
 ./project.out
