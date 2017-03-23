@@ -12,6 +12,7 @@ rm *.list
 g++ -m64 -c -o computemean.o computemean.cpp
 g++ -m64 -c -o computemedian.o computemedian.cpp
 g++ -m64 -c -o harmonicmean.o harmonicmean.cpp
+g++ -m64 -c -o sum.o sum.cpp
 g++ -m64 -c -o main.o main.cpp
 
 #compile c files
@@ -26,7 +27,7 @@ nasm -f elf64 -l sum-array-64.list -o sum-array-64.o sum-array-64.asm
 ls -l
 
 #link all files
-g++ -m64 -o project.out computemean.o computemedian.o harmonicmean.o main.o display.o getdata.o sort.o sum-array-64.o
+g++ -m64 -o project.out computemean.o computemedian.o harmonicmean.o sum.o main.o display.o getdata.o sort.o sum-array-64.o
 
 #call program
 ./project.out

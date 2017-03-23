@@ -34,7 +34,7 @@ int main() {
 		if (nums_used > 0) {
 			display(nums, nums_used);
 
-			//sumation = sum(nums,nums_used);
+			sumation = sum(numbers,nums_used);
 			double arithmetic_mean = computemean(numbers, nums_used);
 			double median = computemedian(numbers, nums_used);
 			double harmonic_mean = harmonicmean(numbers, nums_used);
